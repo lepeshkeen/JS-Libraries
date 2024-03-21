@@ -1,0 +1,80 @@
+.glide {
+  max-width: 650px;
+  /* Adjust based on your content width preference */
+  margin: auto;
+  /* Center the slider */
+  position: relative;
+}
+
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  list-style: none;
+  /* Removes list styling */
+  padding: 0;
+  /* Removes padding */
+  margin: 0;
+  /* Centers the slides with no margin */
+  display: flex;
+  /* Align slides in a row */
+  justify-content: center;
+  /* Centers slides in the flex container */
+}
+
+.glide__slide {
+  flex: 0 0 auto;
+  text-align: center;
+  /* Centers content inside each slide */
+}
+
+.glide__arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  /* Center vertically */
+  pointer-events: none;
+}
+
+.glide__arrow {
+  background: #fff;
+  border: 1px solid #ddd;
+  /* Subtle border */
+  border-radius: 50%;
+  pointer-events: all;
+  /* Allow clicks */
+  color: #333 !important;
+  /* Force arrow color, ensuring override */
+  font-size: 1.2em;
+  /* Adjust icon size */
+}
+
+.glide__arrow:hover {
+  background-color: #f0f0f0;
+  /* Slight hover effect */
+  border-color: #ccc;
+  color: #000 !important;
+  /* Change as needed for hover state */
+}
+
+
+.glide__arrow--left {
+  margin-left: 10px;
+}
+
+.glide__arrow--right {
+  margin-right: 10px;
+}
+
+#cc {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,74 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* This ensures content is spaced out */
+  height: 100%;
+  /* Make the feature fill the height of its parent */
+}
+
+/* Ensure the feature container (.col-*) stretches to fill available vertical space in its row */
+.row>[class*='col-'] {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.btn-learn-more {
+  width: auto;
+  /* Adjust this value as needed, or use max-width for responsiveness */
+  max-width: 200px;
+  /* Example max-width */
+}
+
+@media (min-width: 992px) {
+
+  /* This is the typical breakpoint for desktop view */
+  .navbar-nav .nav-item:not(:last-child) .nav-link::after {
+    content: "•";
+    margin-left: 10px;
+    color: gold;
+    /* You can adjust the color as desired */
+  }
+
+  .sign-in-button {
+
+    display: none;
+  }
+}
+
+/* Media query for mobile devices (less than 992px) */
+@media (max-width: 991px) {
+  .sign-in-button {
+
+    display: block;
+  }
+
+  /* Center the items vertically and horizontally */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Add margin between the items */
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  /* Optional: Style the items with a background color */
+  .navbar-nav .nav-item {
+    background-color: #f8f9fa;
+    /* Change to your desired background color */
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .navbar-collapse .sign-in-button {
+    text-align: center;
+    display: block;
+  }
+
+
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "stuff": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run goservergo\" \"npm run stuff\""
+  },
+  "author": "Ilia Lepeshkin",
+  "license": "private",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.5"
+  }
+}
